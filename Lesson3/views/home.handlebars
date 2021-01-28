@@ -1,0 +1,28 @@
+<h1>Tanya's Restaurants</h1>
+<div class="hero-image">
+    <img src="https://c0.wallpaperflare.com/preview/839/412/980/food-and-drink-pizza-pizzas-tomato.jpg">
+        <div class="hero-text">
+            <h1>Tanya's Restaurants</h1>
+            <p>Discover the Best Restaurants in Town</p>
+        </div>
+</div>
+<section>
+    {{#each restaurants}}
+        {{!-- <a href="/restaurants/{{this.id}}"> --}}
+
+            <article>
+                <header class="Heading">{{this.name}}</header>
+                {{!-- <header style="background-image: url({{this.image}})"></header> --}}
+                <main>
+                    <img src="{{this.image}}">
+                    {{#each this.menus}}        
+                        <p>{{this.title}}</p>
+
+                        <a href="/items/{{this.id}}">Click for Menu Items and Prices</a>
+                    {{/each}}
+                </main>
+            </article>
+
+        {{!-- </a>> --}}
+    {{/each}}
+</section>

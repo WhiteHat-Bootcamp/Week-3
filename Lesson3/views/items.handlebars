@@ -1,0 +1,14 @@
+<h1>{{menu.title}}</h1>
+<h2>{{restaurants.name}}</h2>
+<section>
+    <article>
+        <main>    
+            {{#each menuItems}}
+                <p>{{this.name}} - {{this.price}}</p>
+            {{/each}}
+        </main>
+    </article>
+</section>
+<section>
+    <a href="/">Back to Home Page</a>
+</section>

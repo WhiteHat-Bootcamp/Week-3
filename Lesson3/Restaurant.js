@@ -17,8 +17,8 @@ Restaurant.init({
     timestamps: false,
 });
 
-Restaurant.hasMany(Menu, {as: 'menus', foreignKey: 'restaurant_id'});
-Menu.belongsTo(Restaurant, {foreignKey: 'restaurant_id'});
+Restaurant.hasMany(Menu, {as: 'menus', foreignKey: 'restaurant_id'})
+Menu.belongsTo(Restaurant, {foreignKey: 'restaurant_id'})
 
 module.exports = {
     Restaurant
@@ -26,12 +26,12 @@ module.exports = {
 
 // local testing - remove when using Jest
 
-// (async () => {
-//     await sequelize.sync({ force: true }); // recreate db
-//     const r = await Restaurant.create({ name: 'Ronalds', image: 'http://some.image.url' })
+/*(async () => {
+    await sequelize.sync({ force: true }); // recreate db
+    const r = await Restaurant.create({ name: 'Ronalds', image: 'http://some.image.url' })
 
-//     console.log("Inserted restaurant name is:" + r.name);
-// })();
+    console.log("Inserted restaurant name is:" + r.name);
+})();*/
 
 
 

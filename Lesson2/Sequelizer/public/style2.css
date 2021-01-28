@@ -1,0 +1,9 @@
+* {
+    padding: 40;
+    margin: 40;
+}
+body {
+    font-family: 'sOpen Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(219, 195, 219);
+    background-color: rgb(61, 29, 61);
+}

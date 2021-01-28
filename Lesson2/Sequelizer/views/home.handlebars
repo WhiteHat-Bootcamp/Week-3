@@ -1,0 +1,16 @@
+<h1>Restaurants</h1>
+<section>
+    {{#each restaurants}}
+        <article>
+            <header>{{this.name}}</header>
+            <main>{{#each this.menus}}</main>
+                <p>{{this.title}}</p>
+                {{#each this.items}}
+                    <p>{{this.name}} - {{this.price}}</p>
+                {{/each}}
+            {{/each}}
+            </main>
+        </article>
+    {{/each}}
+</section>
+    
