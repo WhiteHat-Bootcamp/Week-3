@@ -1,0 +1,24 @@
+<h2>Edit the restaurant {{restaurant.name}}</h2>
+
+<form action="/restaurants/{{restaurant.id}}/edited" method="POST">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Please enter the restaurant name" pattern="^[A-Za-z\s]+" title="no special characters permitted" value="{{restaurant.name}}"required>
+    </div>
+    <div>
+        <label for="name">Image</label>
+        <input type="url" name="image" id="image" placeholder="Please paste the image URL" value="{{restaurant.image}}"required>
+    </div>
+    {{!-- <div>
+        <label for="title">Menu name</label>
+        <input type="text" name="title" id="title" placeholder="Please add at least one menu" required>
+    </div> --}}
+    {{!-- <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+    </div> --}}
+    <button type="submit">Submit</button>
+    <button type="reset"></button>
+</form>
+
+<a href="/">Back to Home Page</a>

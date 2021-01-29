@@ -6,6 +6,10 @@
             <p>Discover the Best Restaurants in Town</p>
         </div>
 </div>
+<br>
+
+<h3><a href="/addRest"> + Add Restaurant </a></h3>
+
 <section>
     {{#each restaurants}}
         {{!-- <a href="/restaurants/{{this.id}}"> --}}
@@ -20,6 +24,9 @@
 
                         <a href="/items/{{this.id}}">Click for Menu Items and Prices</a>
                     {{/each}}
+                    <br><br><br><br>
+                    <a href="/restaurants/{{this.id}}/editRest">✏️Edit Restaurant </a>
+                    <a href="/restaurants/{{this.id}}/delete">❌Delete Restaurant </a>
                 </main>
             </article>
 
